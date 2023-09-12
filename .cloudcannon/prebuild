@@ -4,5 +4,7 @@ nvm use 18
 yarn
 yarn build
 cd ../
-mv mdn_content_repo/build public
 npx -y pagefind@beta
+
+today=$(date '+%B %dth, %Y')
+sed -i "s/CURRENT_DATE/$today/g" site/index.html
