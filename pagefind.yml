@@ -1,0 +1,6 @@
+site: mdn_content_repo/build
+output_path: site/pagefind
+force_language: en-us
+root_selector: "#content"
+exclude_selectors: 
+  - .metadata
