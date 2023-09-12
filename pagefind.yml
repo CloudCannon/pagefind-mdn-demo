@@ -3,4 +3,11 @@ output_path: site/pagefind
 force_language: en-us
 root_selector: "#content"
 exclude_selectors: 
+  # Removes the "Found a content problem with this page?" CTA
   - .metadata
+  # Remove tables, to derank reference pages
+  # Normally this would be implemented in a more elegant way in the template,
+  # but this demo is avoiding making any changes to the MDN templating.
+  - table
+  - dd # Same as above, but for description lists
+  - dt # Same as above, but for description lists
