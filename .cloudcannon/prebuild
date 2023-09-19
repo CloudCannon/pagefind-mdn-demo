@@ -4,7 +4,7 @@ nvm use 18
 yarn
 yarn build
 cd ../
-npx -y pagefind@beta
+npx -y pagefind@1
 
 today=$(date '+%B %dth, %Y')
 sed -i "s/CURRENT_DATE/$today/g" site/index.html
