@@ -6,5 +6,5 @@ yarn build
 cd ../
 npx -y pagefind@1
 
-today=$(date '+%B %dth, %Y')
+today=$(date '+%B %d, %Y')
 sed -i "s/CURRENT_DATE/$today/g" site/index.html
