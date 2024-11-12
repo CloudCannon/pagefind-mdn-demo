@@ -1,6 +1,5 @@
 git clone --depth 1 https://github.com/mdn/content.git mdn_content_repo
 cd mdn_content_repo
-nvm use 18
 yarn
 yarn build
 cd ../
